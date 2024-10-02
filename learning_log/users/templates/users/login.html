@@ -1,13 +1,6 @@
-{% extends "learning_logs.html" %}
+{% extends "learning_logs/base.html" %}
 
 {% block content %}
-
-    {% if form.errors %}
-        <p>Seu login e senha estão incorretos.
-            por favor, tente novamente.
-        </p>
-    
-    {% endif %}
 
     <form action="{% url 'login' %}" method="post">
         
@@ -15,7 +8,7 @@
         {{ form.as_p }}
 
         <button name="submit">Entrar</button>
-        <input type="hidden" name="next" value="{% url 'index' %}">
+        <input type="hidden" name="next" value="{% url 'index' %}"/>
 
     </form>      
 
