@@ -69,7 +69,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="{% url 'index' %}">Learning Log</a>
+            <a class="navbar-brand" href="{% url 'index' %}">Registro de Aprendizagem</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -87,7 +87,7 @@
                         </li>
                     {% else %}
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'register' %}">Registrar</a>
+                            <a class="nav-link" href="{% url 'register' %}">Registre-se</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{% url 'login' %}">Entrar</a>
@@ -101,7 +101,7 @@
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="container">
-            <h1>Bem-vindo ao Learning Log</h1>
+            <h1>Bem-vindo ao Registro de Aprendizagem</h1>
             <p>Acompanhe seu progresso e aprenda de forma mais eficiente.</p>
             <a href="{% url 'topics' %}" class="btn btn-custom btn-lg">Ver Tópicos</a>
         </div>
@@ -112,7 +112,7 @@
         {% block content %}
         <div class="text-center">
             <h2>Seus tópicos de aprendizado</h2>
-            <p>Explore os tópicos abaixo para começar a estudar ou criar novos.</p>
+            <p>Explore os tópicos abaixo para começar a estudar e a criar novos conteúdos.</p>
         </div>
         {% endblock content %}
     </div>
